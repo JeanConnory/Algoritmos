@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAlg", "EasyAlg.csproj", "{81C60E95-7536-4942-A9BA-7E3B66BF75B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediumAlg", "..\MediumAlg\MediumAlg.csproj", "{957C9D33-3BB8-41F3-A4B4-30E5F510443B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{81C60E95-7536-4942-A9BA-7E3B66BF75B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81C60E95-7536-4942-A9BA-7E3B66BF75B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81C60E95-7536-4942-A9BA-7E3B66BF75B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{957C9D33-3BB8-41F3-A4B4-30E5F510443B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957C9D33-3BB8-41F3-A4B4-30E5F510443B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957C9D33-3BB8-41F3-A4B4-30E5F510443B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{957C9D33-3BB8-41F3-A4B4-30E5F510443B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

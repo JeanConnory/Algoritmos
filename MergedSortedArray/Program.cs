@@ -14,3 +14,4 @@ int n = 6;
 
 MergeSortedArray merged = new MergeSortedArray();
 merged.Merge(nums1, m, nums2, n);
+Console.ReadKey();
