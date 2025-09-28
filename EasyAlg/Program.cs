@@ -1,5 +1,19 @@
 ﻿using EasyAlg;
 
+#region BinarySearch
+
+int[] nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+int target = 8;
+
+BinarySearch binary = new BinarySearch();
+int result = binary.Search(nums, target);
+Console.WriteLine(result);
+Console.ReadKey();
+
+#endregion
+
+#region MergeSortedArray
+
 //Case 1
 int[] nums1 = [0,0,3,0,0,0,0,0,0];
 int m = 3; 
@@ -14,4 +28,7 @@ int n = 6;
 
 MergeSortedArray merged = new MergeSortedArray();
 merged.Merge(nums1, m, nums2, n);
-Console.ReadKey();
+//Console.ReadKey();
+
+#endregion
+
