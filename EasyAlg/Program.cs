@@ -8,7 +8,18 @@ int target = 8;
 
 BinarySearch binary = new BinarySearch();
 int result = binary.Search(nums, target);
-Console.WriteLine(result);
+//Console.WriteLine(result);
+//Console.ReadKey();
+
+#endregion
+
+#region BubbleSort
+
+int[] v = [10, 5, 8, 7, 6];
+
+int[] resultBubbleSort = BubbleSort.AlgoritmoBubbleSort(v);
+
+resultBubbleSort.ToList().ForEach(n => Console.WriteLine(n));
 Console.ReadKey();
 
 #endregion
