@@ -1,6 +1,7 @@
 ﻿using EasyAlg;
 
-#region BinarySearch
+//Usa a solução de dois ponteiros (right e left) percorrendo o array O(log n)
+#region BinarySearch 
 
 int[] nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 int target = 8;
