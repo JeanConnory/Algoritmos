@@ -1,5 +1,5 @@
 ﻿using MediumAlg;
-using System.Xml.Linq;
+using MediumAlg.Trees;
 
 #region Legth of Longest Substring
 
@@ -20,7 +20,46 @@ int[] result = testMethod.SearchRange(nums, target);
 //result.ToList().ForEach(n => Console.WriteLine(n));
 //Console.WriteLine(string.Join(", ", result));
 
+//Console.WriteLine(result);
+//Console.ReadKey();
+
 #endregion
 
-Console.WriteLine(result);
+#region InverterArvoreBinaria
+
+TreeNode root = new TreeNode(4, new TreeNode(2, new TreeNode(1), new TreeNode(3)), new TreeNode(7, new TreeNode(6), new TreeNode(9)));
+
+var tree = InvertBinaryTree.InvertTree(root);
+
+//InvertBinaryTree.PrintTree(tree);
+
+//Console.ReadKey();
+
+#endregion
+
+#region Busca em Profundidade - DFS
+
+TreeNode root2 = new TreeNode(4, new TreeNode(2, new TreeNode(1), new TreeNode(3)), new TreeNode(7, new TreeNode(6), new TreeNode(9)));
+
+var tree2 = DepthFirstSearchTree.SumNumbers(root2);
+
+//Console.WriteLine(tree2.ToString());
+
+//Console.ReadKey();
+
+#endregion
+
+#region Busca em Largura - BFS
+
+TreeNode root3 = new TreeNode(4, new TreeNode(2, new TreeNode(1), new TreeNode(3)), new TreeNode(7, new TreeNode(6), new TreeNode(9)));
+
+var tree3 = BreadthFirstSearchTree.LevelOrder(root3);
+
+foreach (var nivel in tree3)
+{
+    Console.WriteLine(string.Join(", ", nivel));
+}
+
 Console.ReadKey();
+
+#endregion
