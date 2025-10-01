@@ -43,7 +43,10 @@ TreeNode root2 = new TreeNode(4, new TreeNode(2, new TreeNode(1), new TreeNode(3
 
 var tree2 = DepthFirstSearchTree.SumNumbers(root2);
 
-//Console.WriteLine(tree2.ToString());
+//Console.WriteLine("Pré-Ordem: " + DepthFirstSearchTree.PreOrder(root2));
+//Console.WriteLine("Em-Ordem: " + DepthFirstSearchTree.InOrder(root2));
+//Console.WriteLine("Pós-Ordem: " + DepthFirstSearchTree.PostOrder(root2));
+//Console.WriteLine($"Soma dos nós: {tree2.ToString()}");
 
 //Console.ReadKey();
 
@@ -54,6 +57,7 @@ var tree2 = DepthFirstSearchTree.SumNumbers(root2);
 TreeNode root3 = new TreeNode(4, new TreeNode(2, new TreeNode(1), new TreeNode(3)), new TreeNode(7, new TreeNode(6), new TreeNode(9)));
 
 var tree3 = BreadthFirstSearchTree.LevelOrder(root3);
+//var tree3 = BreadthFirstSearchTree.BreadthFirtsListMethod(root3);
 
 foreach (var nivel in tree3)
 {

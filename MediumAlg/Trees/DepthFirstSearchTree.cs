@@ -20,5 +20,38 @@
 
             return Dfs(node.left!, total) + Dfs(node.right!, total);
         }
+
+        public static string PreOrder(TreeNode? node)
+        {
+            if (node == null) return "";
+
+            string resultado = node.val + " ";
+            resultado += PreOrder(node.left);
+            resultado += PreOrder(node.right);
+
+            return resultado;
+        }
+
+        public static string InOrder(TreeNode? node)
+        {
+            if (node == null) return "";
+
+            string resultado = InOrder(node.left);
+            resultado += node.val + " ";
+            resultado += InOrder(node.right);
+
+            return resultado;
+        }
+
+        public static string PostOrder(TreeNode? node)
+        {
+            if (node == null) return "";
+
+            string resultado = PostOrder(node.left);
+            resultado += PostOrder(node.right);
+            resultado +=node.val + " ";
+
+            return resultado;
+        }
     }
 }
