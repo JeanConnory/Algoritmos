@@ -1,5 +1,14 @@
 ﻿using EasyAlg;
 
+#region Fibonacci
+
+int resultFib = Fibonacci.Fib(8);
+
+Console.WriteLine(resultFib);
+Console.ReadKey();
+
+#endregion
+
 //Usa a solução de dois ponteiros (right e left) percorrendo o array O(log n)
 #region BinarySearch 
 
@@ -19,8 +28,8 @@ int[] v = [10, 5, 8, 7, 6];
 
 int[] resultBubbleSort = BubbleSort.AlgoritmoBubbleSort(v);
 
-resultBubbleSort.ToList().ForEach(n => Console.WriteLine(n));
-Console.ReadKey();
+//resultBubbleSort.ToList().ForEach(n => Console.WriteLine(n));
+//Console.ReadKey();
 
 #endregion
 
