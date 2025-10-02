@@ -62,3 +62,13 @@ bool isValidMountain = ValidMountainArray.ValidMountainArrayMethod(arr);
 //Console.ReadKey();
 
 #endregion
+
+#region MoveZeroes
+
+int[] numsMoveZeroes = [0, 1, 0, 3, 12];
+int[] resultMoveZeroes = MoveZeroes.MoveZeroesMethod(numsMoveZeroes);
+
+//resultMoveZeroes.ToList().ForEach(n => Console.WriteLine(n));
+//Console.ReadKey();
+
+#endregion
