@@ -52,3 +52,13 @@ MergeSortedArray merged = new MergeSortedArray();
 //Console.ReadKey();
 
 #endregion
+
+#region Valid Mountain Array
+
+int[] arr = [0, 3, 2, 1];
+bool isValidMountain = ValidMountainArray.ValidMountainArrayMethod(arr);
+
+//Console.WriteLine(isValidMountain);
+//Console.ReadKey();
+
+#endregion
