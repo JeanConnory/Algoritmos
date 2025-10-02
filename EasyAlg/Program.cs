@@ -1,14 +1,5 @@
 ﻿using EasyAlg;
 
-#region Fibonacci
-
-int resultFib = Fibonacci.Fib(8);
-
-Console.WriteLine(resultFib);
-Console.ReadKey();
-
-#endregion
-
 //Usa a solução de dois ponteiros (right e left) percorrendo o array O(log n)
 #region BinarySearch 
 
@@ -18,6 +9,15 @@ int target = 8;
 BinarySearch binary = new BinarySearch();
 int result = binary.Search(nums, target);
 //Console.WriteLine(result);
+//Console.ReadKey();
+
+#endregion
+
+#region Fibonacci
+
+int resultFib = Fibonacci.Fib(8);
+
+//Console.WriteLine(resultFib);
 //Console.ReadKey();
 
 #endregion
@@ -48,8 +48,19 @@ int n = 6;
 // int n = 1;
 
 MergeSortedArray merged = new MergeSortedArray();
-merged.Merge(nums1, m, nums2, n);
+//merged.Merge(nums1, m, nums2, n);
 //Console.ReadKey();
 
 #endregion
 
+#region Boats To Save People
+
+int[] people = [3, 2, 2, 1];
+int limit = 3;
+
+int numBoats = BoatsToSavePeople.NumRescueBoats(people, limit);
+
+//Console.WriteLine(numBoats);
+//Console.ReadKey();
+
+#endregion
