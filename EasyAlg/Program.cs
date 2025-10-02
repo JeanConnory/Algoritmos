@@ -33,6 +33,16 @@ int[] resultBubbleSort = BubbleSort.AlgoritmoBubbleSort(v);
 
 #endregion
 
+#region SelectionSort
+
+int[] arrSelection = [4, 2, 6, 3, 8];
+int[] resultSelection = SelectionSort.Selection(arrSelection);
+
+//resultSelection.ToList().ForEach(n => Console.WriteLine(n));
+//Console.ReadKey();
+
+#endregion
+
 #region MergeSortedArray
 
 //Case 1
