@@ -1,4 +1,4 @@
-﻿namespace EasyAlg
+﻿namespace MediumAlg
 {
     public static class BoatsToSavePeople
     {

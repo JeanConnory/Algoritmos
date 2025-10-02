@@ -52,15 +52,3 @@ MergeSortedArray merged = new MergeSortedArray();
 //Console.ReadKey();
 
 #endregion
-
-#region Boats To Save People
-
-int[] people = [3, 2, 2, 1];
-int limit = 3;
-
-int numBoats = BoatsToSavePeople.NumRescueBoats(people, limit);
-
-//Console.WriteLine(numBoats);
-//Console.ReadKey();
-
-#endregion

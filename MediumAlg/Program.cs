@@ -56,6 +56,18 @@ int maxArea = ContainerWithMostWater.MaxArea(height);
 
 #endregion
 
+#region Boats To Save People
+
+int[] people = [3, 2, 2, 1];
+int limit = 3;
+
+int numBoats = BoatsToSavePeople.NumRescueBoats(people, limit);
+
+//Console.WriteLine(numBoats);
+//Console.ReadKey();
+
+#endregion
+
 #region Legth of Longest Substring
 
 string s = "abcabcbb";
