@@ -1,4 +1,5 @@
 ﻿using EasyAlg;
+using EasyAlg.Sorts;
 
 //Usa a solução de dois ponteiros (right e left) percorrendo o array O(log n)
 #region BinarySearch 
@@ -39,6 +40,16 @@ int[] arrSelection = [4, 2, 6, 3, 8];
 int[] resultSelection = SelectionSort.Selection(arrSelection);
 
 //resultSelection.ToList().ForEach(n => Console.WriteLine(n));
+//Console.ReadKey();
+
+#endregion
+
+#region QuickSort
+
+int[] numsQuick = [4, 2, 8, 7, 1, 5, 3, 6];
+int[] resultQuick =  QuickSort.QuicksortMethod(numsQuick, 0, numsQuick.Length - 1);
+
+//resultQuick.ToList().ForEach(n => Console.WriteLine(n));
 //Console.ReadKey();
 
 #endregion
