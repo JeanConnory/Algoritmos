@@ -1,4 +1,4 @@
-﻿namespace MediumAlg
+﻿namespace EasyAlg
 {
     public class ListNode //LinkedList
     {
