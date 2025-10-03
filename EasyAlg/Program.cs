@@ -15,6 +15,17 @@ int result = binary.Search(nums, target);
 
 #endregion
 
+#region TwoSum
+
+int[] numerosTwoSum = { 2, 15, 11, 7 };
+int alvo = 9;
+
+int[] resultadoTwoSum = TwoSum.TwoSumMethod(numerosTwoSum, alvo);
+//Console.WriteLine($"Índices encontrados: {string.Join(", ", resultadoTwoSum)}");
+//Console.ReadKey();
+
+#endregion
+
 #region Fibonacci
 
 int resultFib = Fibonacci.Fib(8);
