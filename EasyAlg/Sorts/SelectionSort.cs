@@ -1,4 +1,4 @@
-﻿namespace EasyAlg
+﻿namespace EasyAlg.Sorts
 {
     public static class SelectionSort
     {
