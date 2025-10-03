@@ -1,5 +1,6 @@
 ﻿using EasyAlg;
 using EasyAlg.Sorts;
+using System.Xml.Linq;
 
 //Usa a solução de dois ponteiros (right e left) percorrendo o array O(log n)
 #region BinarySearch 
@@ -50,6 +51,27 @@ int[] numsQuick = [4, 2, 8, 7, 1, 5, 3, 6];
 int[] resultQuick =  QuickSort.QuicksortMethod(numsQuick, 0, numsQuick.Length - 1);
 
 //resultQuick.ToList().ForEach(n => Console.WriteLine(n));
+//Console.ReadKey();
+
+#endregion
+
+#region MergeSort
+
+MergeSort lista = new MergeSort();
+lista.Head = new ListNode(4);
+lista.Head.next = new ListNode(2);
+lista.Head.next.next = new ListNode(5);
+lista.Head.next.next.next = new ListNode(1);
+lista.Head.next.next.next.next = new ListNode(3);
+
+//Console.WriteLine("Lista original:");
+//lista.Exibir();
+
+//lista.Head = lista.MergeSortMethod(lista.Head);
+
+//Console.WriteLine("Lista ordenada:");
+//lista.Exibir();
+
 //Console.ReadKey();
 
 #endregion
