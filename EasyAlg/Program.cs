@@ -97,6 +97,15 @@ lista.Head.next.next.next.next = new ListNode(3);
 
 #endregion
 
+#region HeapSort
+
+int[] numerosHeap = { 12, 2, 24, 51, 8, -5 };
+HeapSort.HeapSortMethod(numerosHeap);
+//Console.WriteLine("Array ordenado: " + string.Join(", ", numerosHeap));
+//Console.ReadKey();
+
+#endregion
+
 #region MergeSortedArray
 
 //Case 1
