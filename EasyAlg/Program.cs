@@ -24,6 +24,16 @@ int resultFib = Fibonacci.Fib(8);
 
 #endregion
 
+#region InsertionSort
+
+int[] numeros = { 5, 3, 4, 1 };
+int[] ordenado = InsertionSort.InsertionSortMethod(numeros);
+
+//Console.WriteLine("Array ordenado: " + string.Join(", ", ordenado));
+//Console.ReadKey();
+
+#endregion
+
 #region BubbleSort
 
 int[] v = [10, 5, 8, 7, 6];
