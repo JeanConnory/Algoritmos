@@ -11,9 +11,9 @@
                 int complemento = target - nums[i];
 
                 if (mapa.ContainsKey(complemento))
-                    return new int[] { mapa[complemento], i };
+                    return new int[] { mapa[complemento], i }; //Retorna o value da chave do complemento ex: [2,0] return 0 e o i
 
-                mapa[nums[i]] = i;
+                mapa[nums[i]] = i; //Adiciona o numero do array como chave e sua posição como valor
             }
 
             return Array.Empty<int>(); // caso não encontre

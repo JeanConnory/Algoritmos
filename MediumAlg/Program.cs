@@ -91,3 +91,19 @@ int[] result = testMethod.SearchRange(nums, target);
 //Console.ReadKey();
 
 #endregion
+
+#region Youtube - Galego
+
+#region TwoSumII
+
+int[] numbersTwoSumII = [2, 7, 11, 15];
+int targetTwoSumII = 9;
+
+int[] resultTwoSumII = TwoSumII.TwoSum(numbersTwoSumII, targetTwoSumII);
+
+Console.WriteLine($"Índices encontrados: {string.Join(", ", resultTwoSumII)}");
+Console.ReadKey();
+
+#endregion
+
+#endregion
