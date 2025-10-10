@@ -145,3 +145,45 @@ int[] resultMoveZeroes = MoveZeroes.MoveZeroesMethod(numsMoveZeroes);
 //Console.ReadKey();
 
 #endregion
+
+#region First Bad Version
+
+int firstBadVersion = FirstBadVersion.FirstBadVersionMethod(5);
+//Console.WriteLine(firstBadVersion);
+//Console.ReadKey();
+
+#endregion
+
+#region Youtube - Jonathan Moura
+
+#region Reverse LinkedList
+
+ListNode node5 = new ListNode(5);
+ListNode node4 = new ListNode(4, node5);
+ListNode node3 = new ListNode(3, node4);
+ListNode node2 = new ListNode(2, node3);
+ListNode node1 = new ListNode(1, node2);
+
+//Console.WriteLine("Lista original:");
+//PrintList(node1);
+
+//ListNode reversed = ReverseLinkedList.ReverseList(node1!);
+
+//Console.WriteLine("Lista invertida:");
+//PrintList(reversed);
+
+//static void PrintList(ListNode? head)
+//{
+//    while (head != null)
+//    {
+//        Console.Write(head.val + " ");
+//        head = head.next;
+//    }
+//    Console.WriteLine();
+//}
+
+//Console.ReadKey();
+
+#endregion
+
+#endregion
