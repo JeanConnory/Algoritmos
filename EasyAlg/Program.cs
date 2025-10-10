@@ -2,38 +2,7 @@
 using EasyAlg.Sorts;
 using System.Xml.Linq;
 
-//Usa a solução de dois ponteiros (right e left) percorrendo o array O(log n)
-#region BinarySearch 
-
-int[] nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-int target = 8;
-
-BinarySearch binary = new BinarySearch();
-int result = binary.Search(nums, target);
-//Console.WriteLine(result);
-//Console.ReadKey();
-
-#endregion
-
-#region TwoSum
-
-int[] numerosTwoSum = { 2, 15, 11, 7 };
-int alvo = 9;
-
-int[] resultadoTwoSum = TwoSum.TwoSumMethod(numerosTwoSum, alvo);
-//Console.WriteLine($"Índices encontrados: {string.Join(", ", resultadoTwoSum)}");
-//Console.ReadKey();
-
-#endregion
-
-#region Fibonacci
-
-int resultFib = Fibonacci.Fib(8);
-
-//Console.WriteLine(resultFib);
-//Console.ReadKey();
-
-#endregion
+#region Algoritmos de Ordenação (Sort)
 
 #region InsertionSort
 
@@ -69,7 +38,7 @@ int[] resultSelection = SelectionSort.Selection(arrSelection);
 #region QuickSort
 
 int[] numsQuick = [4, 2, 8, 7, 1, 5, 3, 6];
-int[] resultQuick =  QuickSort.QuicksortMethod(numsQuick, 0, numsQuick.Length - 1);
+int[] resultQuick = QuickSort.QuicksortMethod(numsQuick, 0, numsQuick.Length - 1);
 
 //resultQuick.ToList().ForEach(n => Console.WriteLine(n));
 //Console.ReadKey();
@@ -106,12 +75,56 @@ HeapSort.HeapSortMethod(numerosHeap);
 
 #endregion
 
+#endregion
+
+#region Youtube - Jonathan Moura
+
+#region Reverse LinkedList
+
+ListNode node5 = new ListNode(5);
+ListNode node4 = new ListNode(4, node5);
+ListNode node3 = new ListNode(3, node4);
+ListNode node2 = new ListNode(2, node3);
+ListNode node1 = new ListNode(1, node2);
+
+//Console.WriteLine("Lista original:");
+//PrintList(node1);
+
+//ListNode reversed = ReverseLinkedList.ReverseList(node1!);
+
+//Console.WriteLine("Lista invertida:");
+//PrintList(reversed);
+
+//static void PrintList(ListNode? head)
+//{
+//    while (head != null)
+//    {
+//        Console.Write(head.val + " ");
+//        head = head.next;
+//    }
+//    Console.WriteLine();
+//}
+
+//Console.ReadKey();
+
+#endregion
+
+#endregion
+
+#region Youtube - Galego
+
+
+
+#endregion
+
+#region Udemy
+
 #region MergeSortedArray
 
 //Case 1
-int[] nums1 = [0,0,3,0,0,0,0,0,0];
-int m = 3; 
-int[] nums2 = [-1,1,1,1,2,3];
+int[] nums1 = [0, 0, 3, 0, 0, 0, 0, 0, 0];
+int m = 3;
+int[] nums2 = [-1, 1, 1, 1, 2, 3];
 int n = 6;
 
 //Case 2
@@ -146,6 +159,39 @@ int[] resultMoveZeroes = MoveZeroes.MoveZeroesMethod(numsMoveZeroes);
 
 #endregion
 
+#region BinarySearch 
+//Usa a solução de dois ponteiros (right e left) percorrendo o array O(log n)
+
+int[] nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+int target = 8;
+
+BinarySearch binary = new BinarySearch();
+int result = binary.Search(nums, target);
+//Console.WriteLine(result);
+//Console.ReadKey();
+
+#endregion
+
+#region Fibonacci
+
+int resultFib = Fibonacci.Fib(8);
+
+//Console.WriteLine(resultFib);
+//Console.ReadKey();
+
+#endregion
+
+#region TwoSum
+
+int[] numerosTwoSum = { 2, 15, 11, 7 };
+int alvo = 9;
+
+int[] resultadoTwoSum = TwoSum.TwoSumMethod(numerosTwoSum, alvo);
+//Console.WriteLine($"Índices encontrados: {string.Join(", ", resultadoTwoSum)}");
+//Console.ReadKey();
+
+#endregion
+
 #region First Bad Version
 
 int firstBadVersion = FirstBadVersion.FirstBadVersionMethod(5);
@@ -154,34 +200,12 @@ int firstBadVersion = FirstBadVersion.FirstBadVersionMethod(5);
 
 #endregion
 
-#region Youtube - Jonathan Moura
+#region Missing Number
 
-#region Reverse LinkedList
+int[] numsMissingNumber = [9, 6, 4, 2, 3, 5, 7, 0, 1];
 
-ListNode node5 = new ListNode(5);
-ListNode node4 = new ListNode(4, node5);
-ListNode node3 = new ListNode(3, node4);
-ListNode node2 = new ListNode(2, node3);
-ListNode node1 = new ListNode(1, node2);
-
-//Console.WriteLine("Lista original:");
-//PrintList(node1);
-
-//ListNode reversed = ReverseLinkedList.ReverseList(node1!);
-
-//Console.WriteLine("Lista invertida:");
-//PrintList(reversed);
-
-//static void PrintList(ListNode? head)
-//{
-//    while (head != null)
-//    {
-//        Console.Write(head.val + " ");
-//        head = head.next;
-//    }
-//    Console.WriteLine();
-//}
-
+int resultMissing = MissingNumber.MissingNumberMethod(numsMissingNumber);
+//Console.WriteLine(resultMissing);
 //Console.ReadKey();
 
 #endregion
