@@ -145,3 +145,11 @@ int[] resultMoveZeroes = MoveZeroes.MoveZeroesMethod(numsMoveZeroes);
 //Console.ReadKey();
 
 #endregion
+
+#region First Bad Version
+
+int firstBadVersion = FirstBadVersion.FirstBadVersionMethod(5);
+//Console.WriteLine(firstBadVersion);
+//Console.ReadKey();
+
+#endregion
