@@ -1,6 +1,26 @@
 ﻿using MediumAlg;
 using MediumAlg.Trees;
 
+#region Youtube - Jonathan Moura
+
+
+
+#endregion
+
+#region Youtube - Galego
+
+#region TwoSumII
+
+int[] numbersTwoSumII = [2, 7, 11, 15];
+int targetTwoSumII = 9;
+
+int[] resultTwoSumII = TwoSumII.TwoSum(numbersTwoSumII, targetTwoSumII);
+
+//Console.WriteLine($"Índices encontrados: {string.Join(", ", resultTwoSumII)}");
+//Console.ReadKey();
+
+#endregion
+
 #region InverterArvoreBinaria
 
 TreeNode root = new TreeNode(4, new TreeNode(2, new TreeNode(1), new TreeNode(3)), new TreeNode(7, new TreeNode(6), new TreeNode(9)));
@@ -43,6 +63,10 @@ var tree3 = BreadthFirstSearchTree.LevelOrder(root3);
 //Console.ReadKey();
 
 #endregion
+
+#endregion
+
+#region Udemy
 
 #region Container With Most Water
 
@@ -92,17 +116,13 @@ int[] result = testMethod.SearchRange(nums, target);
 
 #endregion
 
-#region Youtube - Galego
+#region Count Primes
 
-#region TwoSumII
+int verifyPrimes = 36;
+int resultPrimes = CountPrimes.CountPrimesMethod(verifyPrimes);
 
-int[] numbersTwoSumII = [2, 7, 11, 15];
-int targetTwoSumII = 9;
-
-int[] resultTwoSumII = TwoSumII.TwoSum(numbersTwoSumII, targetTwoSumII);
-
-Console.WriteLine($"Índices encontrados: {string.Join(", ", resultTwoSumII)}");
-Console.ReadKey();
+//Console.WriteLine(resultPrimes);
+//Console.ReadKey();
 
 #endregion
 
