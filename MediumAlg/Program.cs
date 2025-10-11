@@ -64,6 +64,24 @@ var tree3 = BreadthFirstSearchTree.LevelOrder(root3);
 
 #endregion
 
+#region Group Anagrams
+
+string[] strs = ["eat", "tea", "tan", "ate", "nat", "bat"];
+var resultAnagrams = GroupAnagrams.GroupAnagramsMethod(strs);
+
+//foreach (var grupo in resultAnagrams)
+//{
+//    Console.Write("[");
+//    foreach (var palavra in grupo)
+//    {
+//        Console.Write($"\"{palavra}\", ");
+//    }
+//    Console.WriteLine("]");
+//}
+//Console.ReadKey();
+
+#endregion
+
 #endregion
 
 #region Udemy

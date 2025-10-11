@@ -109,11 +109,17 @@ ListNode node1 = new ListNode(1, node2);
 
 #endregion
 
+#region First Occurrence String
+
+int occurrence = FirstOcurrenceString.StrStr("butsad", "sad");
+//Console.WriteLine(occurrence);
+//Console.ReadKey();
+
+#endregion
+
 #endregion
 
 #region Youtube - Galego
-
-
 
 #endregion
 
@@ -206,6 +212,29 @@ int[] numsMissingNumber = [9, 6, 4, 2, 3, 5, 7, 0, 1];
 
 int resultMissing = MissingNumber.MissingNumberMethod(numsMissingNumber);
 //Console.WriteLine(resultMissing);
+//Console.ReadKey();
+
+#endregion
+
+#region Single Number
+
+int[] numsSingle = [4, 2, 1, 2, 1];
+
+int singleNumber = SingleNumber.SingleNumberMethod(numsSingle);
+int singleNumber2 = SingleNumber.SingleNumberMethod(numsSingle);
+
+//Console.WriteLine($"Numero single metodo 1: {singleNumber}");
+//Console.WriteLine($"Numero single metodo 2: {singleNumber2}");
+//Console.ReadKey();
+
+#endregion
+
+#region Robot Return to Origin #657
+
+string moves = "UDLRU";
+bool resultMoves = RobotReturnOrigin.JudgeCircle(moves);
+
+//Console.WriteLine(resultMoves);
 //Console.ReadKey();
 
 #endregion
