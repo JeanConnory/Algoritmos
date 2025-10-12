@@ -117,6 +117,31 @@ int occurrence = FirstOcurrenceString.StrStr("butsad", "sad");
 
 #endregion
 
+#region Palindrome Number
+
+int numPalindrome = 121;
+bool isPalindrome = PalindromeNumber.IsPalindrome(numPalindrome);
+//Console.WriteLine(isPalindrome);
+//Console.ReadKey();
+
+#endregion
+
+#region LinkedList Cycle
+
+ListNode nodeCycle1 = new ListNode(3);
+ListNode nodeCycle2 = new ListNode(2);
+ListNode nodeCycle3 = new ListNode(0);
+ListNode nodeCycle4 = new ListNode(-4);
+nodeCycle1.next = nodeCycle2;
+nodeCycle2.next = nodeCycle3;
+nodeCycle3.next = nodeCycle4;
+nodeCycle4.next = nodeCycle2;
+
+//Console.WriteLine("Teste com ciclo: " + LinkedListCycle.HasCycle(nodeCycle1));
+//Console.ReadKey();
+
+#endregion
+
 #endregion
 
 #region Youtube - Galego
@@ -235,6 +260,18 @@ string moves = "UDLRU";
 bool resultMoves = RobotReturnOrigin.JudgeCircle(moves);
 
 //Console.WriteLine(resultMoves);
+//Console.ReadKey();
+
+#endregion
+
+#region AddBinary
+
+string aBinary = "1010";
+string bBinary = "1011";
+
+string resultAddBinary = AddBinary.AddBinaryMethod(aBinary, bBinary);
+
+//Console.WriteLine(resultAddBinary);
 //Console.ReadKey();
 
 #endregion
