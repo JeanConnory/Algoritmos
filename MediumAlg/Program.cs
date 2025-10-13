@@ -1,9 +1,26 @@
-﻿using MediumAlg;
+﻿using EasyAlg;
+using MediumAlg;
 using MediumAlg.Trees;
+using System.Xml.Linq;
 
 #region Youtube - Jonathan Moura
 
+#region AddTwoNumbers
 
+ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3))); // representa 342
+ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4))); // representa 465
+
+ListNode resultTwoNumbers = AddTwoNumbers.AddTwoNumbersMethod(l1, l2);
+
+//while (resultTwoNumbers != null)
+//{
+//    Console.Write(resultTwoNumbers.val);
+//    if (resultTwoNumbers.next != null) Console.Write(" -> ");
+//    resultTwoNumbers = resultTwoNumbers.next!;
+//}
+//Console.ReadKey();
+
+#endregion
 
 #endregion
 
@@ -78,6 +95,16 @@ var resultAnagrams = GroupAnagrams.GroupAnagramsMethod(strs);
 //    }
 //    Console.WriteLine("]");
 //}
+//Console.ReadKey();
+
+#endregion
+
+#region Longest Consecutive Sequence
+
+int[] numsConsecutives = [0, 3, 7, 2, 5, 8, 4, 6, 0, 1];
+
+int resultConsecutives = LongestConsecutiveSequence.LongestConsecutiveMethod(numsConsecutives);
+//Console.WriteLine(resultConsecutives);
 //Console.ReadKey();
 
 #endregion

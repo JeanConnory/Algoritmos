@@ -276,4 +276,22 @@ string resultAddBinary = AddBinary.AddBinaryMethod(aBinary, bBinary);
 
 #endregion
 
+#region Contains Duplicate #217
+
+int[] numsContainsDuplicate = [1, 2, 3, 1];
+bool resultDuplicate = ContainsDuplicate.ContainsDuplicateMethod(numsContainsDuplicate);
+//Console.WriteLine(resultDuplicate);
+//Console.ReadKey();
+
+#endregion
+
+#region Majority Element #169
+
+int[] numsMajority = [2, 2, 1, 1, 1, 2, 2];
+int numMajority = MajorityElement.MajorityElementMethod(numsMajority);
+//Console.WriteLine(numMajority);
+//Console.ReadKey();
+
+#endregion
+
 #endregion
