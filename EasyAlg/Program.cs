@@ -79,7 +79,7 @@ HeapSort.HeapSortMethod(numerosHeap);
 
 #region Youtube - Jonathan Moura
 
-#region Reverse LinkedList
+#region Reverse LinkedList #206
 
 ListNode node5 = new ListNode(5);
 ListNode node4 = new ListNode(4, node5);
@@ -109,7 +109,7 @@ ListNode node1 = new ListNode(1, node2);
 
 #endregion
 
-#region First Occurrence String
+#region First Occurrence String #28
 
 int occurrence = FirstOcurrenceString.StrStr("butsad", "sad");
 //Console.WriteLine(occurrence);
@@ -117,7 +117,7 @@ int occurrence = FirstOcurrenceString.StrStr("butsad", "sad");
 
 #endregion
 
-#region Palindrome Number
+#region Palindrome Number #9
 
 int numPalindrome = 121;
 bool isPalindrome = PalindromeNumber.IsPalindrome(numPalindrome);
@@ -126,7 +126,7 @@ bool isPalindrome = PalindromeNumber.IsPalindrome(numPalindrome);
 
 #endregion
 
-#region LinkedList Cycle
+#region LinkedList Cycle #141
 
 ListNode nodeCycle1 = new ListNode(3);
 ListNode nodeCycle2 = new ListNode(2);
@@ -161,6 +161,28 @@ int resultClimbing = ClimbingStairs.ClimbStairsMethod(nClimbing);
 
 #endregion
 
+#region Maximum Depth of Binary Tree #104
+
+TreeNodeEasy root = new TreeNodeEasy(1);
+root.left = new TreeNodeEasy(2);
+root.right = new TreeNodeEasy(3);
+root.left.left = new TreeNodeEasy(4);
+
+int depth = MaximumDepthBinaryTree.MaxDepth(root);
+//Console.WriteLine("Profundidade máxima da árvore: " + depth); // Esperado: 3
+
+#endregion
+
+#region Convert sorted Array to BST #108
+
+int[] numsConvert = { -10, -3, 0, 5, 9 };
+TreeNodeEasy rootConvert = ConvertSortedArrayToBfs.SortedArrayToBST(numsConvert);
+
+//Console.WriteLine("Árvore gerada (em ordem):");
+//ConvertSortedArrayToBfs.PrintInOrder(rootConvert); // Esperado: -10 -3 0 5 9
+
+#endregion
+
 #endregion
 
 #region Youtube - Galego
@@ -169,7 +191,7 @@ int resultClimbing = ClimbingStairs.ClimbStairsMethod(nClimbing);
 
 #region Udemy
 
-#region MergeSortedArray
+#region MergeSortedArray #88
 
 //Case 1
 int[] nums1 = [0, 0, 3, 0, 0, 0, 0, 0, 0];
@@ -189,7 +211,7 @@ MergeSortedArray merged = new MergeSortedArray();
 
 #endregion
 
-#region Valid Mountain Array
+#region Valid Mountain Array #941
 
 int[] arr = [0, 3, 2, 1];
 bool isValidMountain = ValidMountainArray.ValidMountainArrayMethod(arr);
@@ -199,7 +221,7 @@ bool isValidMountain = ValidMountainArray.ValidMountainArrayMethod(arr);
 
 #endregion
 
-#region MoveZeroes
+#region MoveZeroes #283
 
 int[] numsMoveZeroes = [0, 1, 0, 3, 12];
 int[] resultMoveZeroes = MoveZeroes.MoveZeroesMethod(numsMoveZeroes);
@@ -209,7 +231,7 @@ int[] resultMoveZeroes = MoveZeroes.MoveZeroesMethod(numsMoveZeroes);
 
 #endregion
 
-#region BinarySearch 
+#region BinarySearch #704
 //Usa a solução de dois ponteiros (right e left) percorrendo o array O(log n)
 
 int[] nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -222,7 +244,7 @@ int result = binary.Search(nums, target);
 
 #endregion
 
-#region Fibonacci
+#region Fibonacci #509
 
 int resultFib = Fibonacci.Fib(8);
 
@@ -231,7 +253,7 @@ int resultFib = Fibonacci.Fib(8);
 
 #endregion
 
-#region TwoSum
+#region TwoSum #1
 
 int[] numerosTwoSum = { 2, 15, 11, 7 };
 int alvo = 9;
@@ -242,7 +264,7 @@ int[] resultadoTwoSum = TwoSum.TwoSumMethod(numerosTwoSum, alvo);
 
 #endregion
 
-#region First Bad Version
+#region First Bad Version #278
 
 int firstBadVersion = FirstBadVersion.FirstBadVersionMethod(5);
 //Console.WriteLine(firstBadVersion);
@@ -250,7 +272,7 @@ int firstBadVersion = FirstBadVersion.FirstBadVersionMethod(5);
 
 #endregion
 
-#region Missing Number
+#region Missing Number #268
 
 int[] numsMissingNumber = [9, 6, 4, 2, 3, 5, 7, 0, 1];
 
@@ -260,7 +282,7 @@ int resultMissing = MissingNumber.MissingNumberMethod(numsMissingNumber);
 
 #endregion
 
-#region Single Number
+#region Single Number #136
 
 int[] numsSingle = [4, 2, 1, 2, 1];
 
@@ -283,7 +305,7 @@ bool resultMoves = RobotReturnOrigin.JudgeCircle(moves);
 
 #endregion
 
-#region AddBinary
+#region AddBinary #67
 
 string aBinary = "1010";
 string bBinary = "1011";
@@ -310,6 +332,23 @@ int[] numsMajority = [2, 2, 1, 1, 1, 2, 2];
 int numMajority = MajorityElement.MajorityElementMethod(numsMajority);
 //Console.WriteLine(numMajority);
 //Console.ReadKey();
+
+#endregion
+
+#region Merge Two Sorted List #21
+
+ListNode list1 = new ListNode(1, new ListNode(3, new ListNode(5)));
+ListNode list2 = new ListNode(2, new ListNode(4, new ListNode(6)));
+
+ListNode resultado = MergeTwoSortedList.MergeTwoLists(list1, list2);
+
+while (resultado != null)
+{
+    Console.Write(resultado.val);
+    if (resultado.next != null) Console.Write(" -> ");
+    resultado = resultado.next!;
+}
+Console.WriteLine();
 
 #endregion
 

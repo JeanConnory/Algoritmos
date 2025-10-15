@@ -25,11 +25,11 @@ public static class SingleNumber
 
     public static int SingleNumberMethod2(int[] nums)
     {
-        int ans = 0;
+        int result = 0;
         foreach (int num in nums)
         {
-            ans ^= num; //Usando XOR (bits)
+            result ^= num; //Usando XOR (bits)
         }
-        return ans;
+        return result;
     }
 }
