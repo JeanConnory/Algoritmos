@@ -171,4 +171,18 @@ int resultPrimes = CountPrimes.CountPrimesMethod(verifyPrimes);
 
 #endregion
 
+#region 4sum2 #454
+
+int[] numsSum1 = [1, 2];
+int[] numsSum2 = [-2, -1];
+int[] numsSum3 = [-1, 2];
+int[] numsSum4 = [0, 2];
+
+int resultSums = FourSumCount.FourSumCountMethod(numsSum1, numsSum2, numsSum3, numsSum4);
+//Console.WriteLine(resultSums);
+
 #endregion
+
+#endregion
+
+Console.ReadKey();

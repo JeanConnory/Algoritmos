@@ -142,6 +142,25 @@ nodeCycle4.next = nodeCycle2;
 
 #endregion
 
+#region Plus One #66
+
+//int[] numsPlusOne = [9];
+int[] numsPlusOne = [1, 2, 3, 9];
+int[] resultPlusOne = PlusOne.PlusOneMethod(numsPlusOne);
+
+//resultPlusOne.ToList().ForEach(n => Console.WriteLine(n));
+//Console.ReadKey();
+
+#endregion
+
+#region ClimbingStairs #70
+
+int nClimbing = 3;
+int resultClimbing = ClimbingStairs.ClimbStairsMethod(nClimbing);
+//Console.WriteLine(resultClimbing);
+
+#endregion
+
 #endregion
 
 #region Youtube - Galego
@@ -295,3 +314,5 @@ int numMajority = MajorityElement.MajorityElementMethod(numsMajority);
 #endregion
 
 #endregion
+
+Console.ReadKey();
