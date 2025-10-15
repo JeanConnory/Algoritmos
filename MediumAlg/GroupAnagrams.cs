@@ -17,7 +17,7 @@ public static class GroupAnagrams
             dic[new string(str)].Add(item);
         }
 
-        var result = new List<IList<string>>();
+        var result = new List<IList<string>>(); //(dic.Values)
 
         foreach (List<string> list in dic.Values)
         {

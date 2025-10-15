@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 #region Youtube - Jonathan Moura
 
-#region AddTwoNumbers
+#region AddTwoNumbers #2
 
 ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3))); // representa 342
 ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4))); // representa 465
@@ -26,7 +26,7 @@ ListNode resultTwoNumbers = AddTwoNumbers.AddTwoNumbersMethod(l1, l2);
 
 #region Youtube - Galego
 
-#region TwoSumII
+#region TwoSumII #167
 
 int[] numbersTwoSumII = [2, 7, 11, 15];
 int targetTwoSumII = 9;
@@ -38,7 +38,7 @@ int[] resultTwoSumII = TwoSumII.TwoSum(numbersTwoSumII, targetTwoSumII);
 
 #endregion
 
-#region InverterArvoreBinaria
+#region InverterArvoreBinaria #226
 
 TreeNode root = new TreeNode(4, new TreeNode(2, new TreeNode(1), new TreeNode(3)), new TreeNode(7, new TreeNode(6), new TreeNode(9)));
 
@@ -81,7 +81,7 @@ var tree3 = BreadthFirstSearchTree.LevelOrder(root3);
 
 #endregion
 
-#region Group Anagrams
+#region Group Anagrams #49
 
 string[] strs = ["eat", "tea", "tan", "ate", "nat", "bat"];
 var resultAnagrams = GroupAnagrams.GroupAnagramsMethod(strs);
@@ -95,11 +95,10 @@ var resultAnagrams = GroupAnagrams.GroupAnagramsMethod(strs);
 //    }
 //    Console.WriteLine("]");
 //}
-//Console.ReadKey();
 
 #endregion
 
-#region Longest Consecutive Sequence
+#region Longest Consecutive Sequence #128
 
 int[] numsConsecutives = [0, 3, 7, 2, 5, 8, 4, 6, 0, 1];
 
@@ -113,7 +112,7 @@ int resultConsecutives = LongestConsecutiveSequence.LongestConsecutiveMethod(num
 
 #region Udemy
 
-#region Container With Most Water
+#region Container With Most Water #11
 
 int[] height = [1, 8, 6, 2, 5, 4, 8, 3, 7];
 
@@ -125,7 +124,7 @@ int maxArea = ContainerWithMostWater.MaxArea(height);
 
 #endregion
 
-#region Boats To Save People
+#region Boats To Save People #881
 
 int[] people = [3, 2, 2, 1];
 int limit = 3;
@@ -137,7 +136,7 @@ int numBoats = BoatsToSavePeople.NumRescueBoats(people, limit);
 
 #endregion
 
-#region Legth of Longest Substring
+#region Legth of Longest Substring #3
 
 string s = "abcabcbb";
 LengthOfLongestSubstring lengthOfLongestSubstring = new LengthOfLongestSubstring();
@@ -145,7 +144,7 @@ int longestSubstring = lengthOfLongestSubstring.LengthOfLongestSubstringMethod(s
 
 #endregion
 
-#region Find First And Last Position Of Element In Sorted Array
+#region Find First And Last Position Of Element In Sorted Array #34
 
 int[] nums = [5, 7, 7, 8, 8, 10];
 int target = 8;
@@ -161,7 +160,7 @@ int[] result = testMethod.SearchRange(nums, target);
 
 #endregion
 
-#region Count Primes
+#region Count Primes #204
 
 int verifyPrimes = 36;
 int resultPrimes = CountPrimes.CountPrimesMethod(verifyPrimes);
