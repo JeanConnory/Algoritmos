@@ -35,7 +35,7 @@ int[] resultSelection = SelectionSort.Selection(arrSelection);
 
 #endregion
 
-#region QuickSort
+#region QuickSort #75
 
 int[] numsQuick = [4, 2, 8, 7, 1, 5, 3, 6];
 int[] resultQuick = QuickSort.QuicksortMethod(numsQuick, 0, numsQuick.Length - 1);
@@ -183,9 +183,37 @@ TreeNodeEasy rootConvert = ConvertSortedArrayToBfs.SortedArrayToBST(numsConvert)
 
 #endregion
 
+#region Same Tree #100
+
+TreeNodeEasy p = new TreeNodeEasy(1, new TreeNodeEasy(2, new TreeNodeEasy(3)));
+TreeNodeEasy q = new TreeNodeEasy(1, new TreeNodeEasy(2, new TreeNodeEasy(3)));
+
+bool resultSameTree = SameTree.IsSameTree(p, q);
+//Console.WriteLine(resultSameTree);
+
+#endregion
+
+#region Valid Anagram #242
+
+string s = "anagram";
+string t = "nagaram";
+
+bool resultValidAnagram = ValidAnagram.IsAnagram(s, t);
+//Console.WriteLine(resultValidAnagram);
+
+#endregion
+
 #endregion
 
 #region Youtube - Galego
+
+#region Reverse Bits #190
+
+int nBit = 43261596;
+int bitReverso = ReverseBits.ReverseBitsMethod(nBit);
+Console.WriteLine(bitReverso);
+
+#endregion
 
 #endregion
 
@@ -342,13 +370,13 @@ ListNode list2 = new ListNode(2, new ListNode(4, new ListNode(6)));
 
 ListNode resultado = MergeTwoSortedList.MergeTwoLists(list1, list2);
 
-while (resultado != null)
-{
-    Console.Write(resultado.val);
-    if (resultado.next != null) Console.Write(" -> ");
-    resultado = resultado.next!;
-}
-Console.WriteLine();
+//while (resultado != null)
+//{
+//    Console.Write(resultado.val);
+//    if (resultado.next != null) Console.Write(" -> ");
+//    resultado = resultado.next!;
+//}
+//Console.WriteLine();
 
 #endregion
 

@@ -22,6 +22,14 @@ ListNode resultTwoNumbers = AddTwoNumbers.AddTwoNumbersMethod(l1, l2);
 
 #endregion
 
+#region Minimum Rotated Sorted Array #153
+
+int[] numsRotated = [3, 4, 5, 1, 2, 0];
+int resultMinimunRotated = MinimumInRotatedSortedArray.FindMin(numsRotated);
+//Console.WriteLine(resultMinimunRotated);
+
+#endregion
+
 #endregion
 
 #region Youtube - Galego
@@ -179,6 +187,35 @@ int[] numsSum4 = [0, 2];
 
 int resultSums = FourSumCount.FourSumCountMethod(numsSum1, numsSum2, numsSum3, numsSum4);
 //Console.WriteLine(resultSums);
+
+#endregion
+
+#region Remove Nth Element from the end of List #19
+
+int nElement = 2;
+ListNode listRemoveNthElement = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+ListNode resultRemoveNthElement = RemoveNthElementFromEnd.RemoveNthFromEnd(listRemoveNthElement, nElement);
+
+//while (resultRemoveNthElement != null)
+//{
+//    Console.Write(resultRemoveNthElement.val);
+//    if (resultRemoveNthElement.next != null) Console.Write(" -> ");
+//    resultRemoveNthElement = resultRemoveNthElement.next!;
+//}
+
+#endregion
+
+#region Odd Even Linked List #328
+
+ListNode listOddEven = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+ListNode resultListOddEven = OddEvenLinkedList.OddEvenListMethod(listOddEven);
+
+//while (resultListOddEven != null)
+//{
+//    Console.Write(resultListOddEven.val);
+//    if (resultListOddEven.next != null) Console.Write(" -> ");
+//    resultListOddEven = resultListOddEven.next!;
+//}
 
 #endregion
 
