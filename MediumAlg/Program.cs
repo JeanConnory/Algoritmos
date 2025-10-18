@@ -116,6 +116,31 @@ int resultConsecutives = LongestConsecutiveSequence.LongestConsecutiveMethod(num
 
 #endregion
 
+#region Copy List with Random Pointer
+
+Node n1 = new Node(1);
+Node n2 = new Node(2);
+Node n3 = new Node(3);
+
+n1.next = n2;
+n2.next = n3;
+
+n1.random = n3;
+n2.random = n1;
+n3.random = n2;
+
+// Clonando
+Node curr = CopyListRandomPointer.CopyRandomList(n1);
+
+//while (curr != null)
+//{
+//    string randomVal = curr.random != null ? curr.random.val.ToString() : "null";
+//    Console.WriteLine($"Valor: {curr.val}, Next: {(curr.next != null ? curr.next.val.ToString() : "null")}, Random: {randomVal}");
+//    curr = curr.next!;
+//}
+
+#endregion
+
 #endregion
 
 #region Udemy
@@ -215,6 +240,42 @@ ListNode resultListOddEven = OddEvenLinkedList.OddEvenListMethod(listOddEven);
 //    Console.Write(resultListOddEven.val);
 //    if (resultListOddEven.next != null) Console.Write(" -> ");
 //    resultListOddEven = resultListOddEven.next!;
+//}
+
+#endregion
+
+#region Subsets #78
+
+int[] numsSubsets = [1, 2, 3,];
+
+var resultSubsets = Subsets.SubsetsMethod(numsSubsets);
+
+//foreach (var sublista in resultSubsets)
+//{
+//    Console.Write("[");
+//    foreach (var numero in sublista)
+//    {
+//        Console.Write(numero + " ");
+//    }
+//    Console.WriteLine("]");
+//}
+
+#endregion
+
+#region Letter Combinations of a Phone Number # 17
+
+string digits = "23";
+
+var resultPhoneNumbers = LetterCombinationsPhoneNumber.LetterCombinations(digits);
+
+//foreach (var sublista in resultPhoneNumbers)
+//{
+//    Console.Write("[");
+//    foreach (var numero in sublista)
+//    {
+//        Console.Write(numero + " ");
+//    }
+//    Console.WriteLine("]");
 //}
 
 #endregion
