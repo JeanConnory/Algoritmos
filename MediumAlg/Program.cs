@@ -280,6 +280,49 @@ var resultPhoneNumbers = LetterCombinationsPhoneNumber.LetterCombinations(digits
 
 #endregion
 
+#region Combination Sum #39
+
+int[] candidates = [2, 3, 6, 7];
+int targetCombination = 7;
+
+var resutlCombinationSum = CombinationSum.CombinationSumMethod(candidates, targetCombination);
+
+//foreach (var combinacao in resutlCombinationSum)
+//{
+//    Console.Write("[");
+//    Console.Write(string.Join(", ", combinacao));
+//    Console.WriteLine("]");
+//}
+
+#endregion
+
+#region Palindrome Partitioning #131
+
+string sPalindromePart = "aab";
+var resultPalindrome = PalindromePartitioning.Partition(sPalindromePart);
+
+//foreach (var combinacao in resultPalindrome)
+//{
+//    Console.Write("[");
+//    Console.Write(string.Join(", ", combinacao));
+//    Console.WriteLine("]");
+//}
+
+#endregion
+
+#region Symmetric Tree #101
+
+TreeNode rootSymmetric = new TreeNode(1,
+    new TreeNode(2, new TreeNode(3), new TreeNode(4)),
+    new TreeNode(2, new TreeNode(4), new TreeNode(3))
+);
+
+bool resultSymmetric = SymmetricTree.IsSymmetric(rootSymmetric);
+Console.WriteLine($"É simétrica? {resultSymmetric}");
+
+
+#endregion
+
 #endregion
 
 Console.ReadKey();
