@@ -211,7 +211,26 @@ bool resultValidAnagram = ValidAnagram.IsAnagram(s, t);
 
 int nBit = 43261596;
 int bitReverso = ReverseBits.ReverseBitsMethod(nBit);
-Console.WriteLine(bitReverso);
+//Console.WriteLine(bitReverso);
+
+#endregion
+
+#region Valid Palindrome #125
+
+string sPalindrome = "A man, a plan, a canal: Panama";
+bool isPalindromeText = ValidPalindrome.IsPalindrome(sPalindrome);
+
+//Console.WriteLine(isPalindromeText);
+
+#endregion
+
+#region Number of Recent Calls #933
+
+RecentCounter recent = new RecentCounter();
+//Console.WriteLine(recent.Ping(1));
+//Console.WriteLine(recent.Ping(100));
+//Console.WriteLine(recent.Ping(3001));
+//Console.WriteLine(recent.Ping(3002));
 
 #endregion
 
