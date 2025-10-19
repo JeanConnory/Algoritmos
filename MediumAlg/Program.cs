@@ -318,8 +318,79 @@ TreeNode rootSymmetric = new TreeNode(1,
 );
 
 bool resultSymmetric = SymmetricTree.IsSymmetric(rootSymmetric);
-Console.WriteLine($"É simétrica? {resultSymmetric}");
+//Console.WriteLine($"É simétrica? {resultSymmetric}");
 
+
+#endregion
+
+#region Path Sum Tree #112
+
+TreeNode rootPathSum = new TreeNode(5,
+    new TreeNode(4,
+        new TreeNode(11,
+            new TreeNode(7),
+            new TreeNode(2)
+        ),
+        null
+    ),
+    new TreeNode(8,
+        new TreeNode(13),
+        new TreeNode(4,
+            null,
+            new TreeNode(1)
+        )
+    )
+);
+
+int targetPathSum = 22;
+bool resultPathSum = PathSum.HasPathSum(rootPathSum, targetPathSum);
+
+//Console.WriteLine($"Existe o path sum para o Target {targetPathSum} ? {resultPathSum}");
+//Console.WriteLine("Path Sum: ");
+//PathSum.ImprimirPathSum(rootPathSum, targetPathSum);
+
+#endregion
+
+#region Lowest Common Ancestor #236
+
+TreeNode node7 = new TreeNode(7);
+TreeNode node4 = new TreeNode(4);
+TreeNode node2 = new TreeNode(2, node7, node4);
+TreeNode node6 = new TreeNode(6);
+TreeNode node5 = new TreeNode(5, node6, node2);
+
+TreeNode node0 = new TreeNode(0);
+TreeNode node8 = new TreeNode(8);
+TreeNode node1 = new TreeNode(1, node0, node8);
+
+TreeNode rootLca = new TreeNode(3, node5, node1);
+
+TreeNode? resultLca = LowestCommonAncestor.LowestCommonAncestorMethod(rootLca, node5, node1);
+//Console.WriteLine($"LCA de {node5.val} e {node1.val} é: {resultLca?.val}");
+
+resultLca = LowestCommonAncestor.LowestCommonAncestorMethod(rootLca, node5, node4);
+//Console.WriteLine($"LCA de {node5.val} e {node4.val} é: {resultLca?.val}");
+
+#endregion
+
+#region Kth Smallest Element in BST #230
+
+//TreeNode node7Kth = new TreeNode(7);
+TreeNode node4Kth = new TreeNode(4);
+TreeNode node2Kth = new TreeNode(2);
+//TreeNode node6Kth = new TreeNode(6);
+//TreeNode node5Kth = new TreeNode(5, node6Kth, node2Kth);
+
+//TreeNode node0Kth = new TreeNode(0);
+//TreeNode node8Kth = new TreeNode(8);
+TreeNode node1Kth = new TreeNode(1, null, node2Kth);
+
+TreeNode rootKth = new TreeNode(3, node1Kth, node4Kth);
+
+KthElementInBst objKth = new KthElementInBst();
+
+int resultKth = objKth.KthSmallest(rootKth, 1);
+//Console.WriteLine(resultKth);
 
 #endregion
 
