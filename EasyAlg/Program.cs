@@ -234,6 +234,21 @@ RecentCounter recent = new RecentCounter();
 
 #endregion
 
+#region Middle of Linked List #876
+
+ListNode nodeMiddle6 = new ListNode(6);
+ListNode nodeMiddle5 = new ListNode(5, nodeMiddle6);
+ListNode nodeMiddle4 = new ListNode(4, nodeMiddle5);
+ListNode nodeMiddle3 = new ListNode(3, nodeMiddle4);
+ListNode nodeMiddle2 = new ListNode(2, nodeMiddle3);
+ListNode nodeMiddle1 = new ListNode(1, nodeMiddle2);
+
+ListNode nodeMiddleResult = MiddleLinkedList.MiddleNode(nodeMiddle1);
+
+//Console.WriteLine(nodeMiddleResult.val);
+
+#endregion
+
 #endregion
 
 #region Udemy
