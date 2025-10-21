@@ -394,6 +394,15 @@ int resultKth = objKth.KthSmallest(rootKth, 1);
 
 #endregion
 
+#region Binary Tree Maximum Path Sum #124 (Hard)
+
+TreeNode rootMaxPathSum = new TreeNode(1, new TreeNode(2), new TreeNode(3));
+
+int maxPathSum = BinaryTreeMaximumPathSum.MaxPathSum(rootMaxPathSum);
+//Console.WriteLine(maxPathSum);
+
+#endregion
+
 #endregion
 
 Console.ReadKey();
