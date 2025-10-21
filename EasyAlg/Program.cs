@@ -399,6 +399,14 @@ ListNode resultado = MergeTwoSortedList.MergeTwoLists(list1, list2);
 
 #endregion
 
+#region Valid Parentheses #20
+
+string sValidParentheses = "{[()]}";
+bool isValidParentheses = ValidParentheses.IsValid(sValidParentheses);
+//Console.WriteLine(isValidParentheses);
+
+#endregion
+
 #endregion
 
 Console.ReadKey();

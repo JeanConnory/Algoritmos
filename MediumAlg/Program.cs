@@ -73,7 +73,7 @@ var tree2 = DepthFirstSearchTree.SumNumbers(root2);
 
 #endregion
 
-#region Busca em Largura - BFS
+#region Busca em Largura - BFS #102
 
 TreeNode root3 = new TreeNode(4, new TreeNode(2, new TreeNode(1), new TreeNode(3)), new TreeNode(7, new TreeNode(6), new TreeNode(9)));
 
@@ -84,8 +84,6 @@ var tree3 = BreadthFirstSearchTree.LevelOrder(root3);
 //{
 //    Console.WriteLine(string.Join(", ", nivel));
 //}
-
-//Console.ReadKey();
 
 #endregion
 
@@ -400,6 +398,23 @@ TreeNode rootMaxPathSum = new TreeNode(1, new TreeNode(2), new TreeNode(3));
 
 int maxPathSum = BinaryTreeMaximumPathSum.MaxPathSum(rootMaxPathSum);
 //Console.WriteLine(maxPathSum);
+
+#endregion
+
+#region Min Stack #155
+
+MinStack minStack = new MinStack();
+
+minStack.Push(-2);
+minStack.Push(0);
+minStack.Push(-3);
+
+//Console.WriteLine("Mínimo atual: " + minStack.GetMin()); // -3
+
+minStack.Pop();
+
+//Console.WriteLine("Topo atual: " + minStack.Top());     // 0
+//Console.WriteLine("Mínimo atual: " + minStack.GetMin()); // -2
 
 #endregion
 
