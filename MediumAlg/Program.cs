@@ -418,6 +418,41 @@ minStack.Pop();
 
 #endregion
 
+#region BinaryTree ZigZag #103
+
+TreeNode rootZigZag = new TreeNode(3,
+    new TreeNode(9),
+    new TreeNode(20,
+        new TreeNode(15),
+        new TreeNode(7)
+    )
+);
+
+var resultZigZag = BinaryTreeZigZag.ZigzagLevelOrder(rootZigZag);
+
+//foreach (var nivel in resultZigZag)
+//{
+//    Console.WriteLine("[" + string.Join(", ", nivel) + "]");
+//}
+
+#endregion
+
+#region Binary Tree Postorder Traversal #145
+
+TreeNode rootPostorder = new TreeNode(1,
+    new TreeNode(2,
+        new TreeNode(4),
+        new TreeNode(5)
+    ),
+    new TreeNode(3)
+);
+
+var resultPostorder = BinaryTreePostOrderTraversal.PostOrderTraversal(rootPostorder);
+
+//Console.WriteLine("[" + string.Join(", ", resultPostorder) + "]");
+
+#endregion
+
 #endregion
 
 Console.ReadKey();
