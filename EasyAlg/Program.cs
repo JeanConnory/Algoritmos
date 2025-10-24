@@ -21,7 +21,6 @@ int[] v = [10, 5, 8, 7, 6];
 int[] resultBubbleSort = BubbleSort.AlgoritmoBubbleSort(v);
 
 //resultBubbleSort.ToList().ForEach(n => Console.WriteLine(n));
-//Console.ReadKey();
 
 #endregion
 
@@ -41,7 +40,6 @@ int[] numsQuick = [4, 2, 8, 7, 1, 5, 3, 6];
 int[] resultQuick = QuickSort.QuicksortMethod(numsQuick, 0, numsQuick.Length - 1);
 
 //resultQuick.ToList().ForEach(n => Console.WriteLine(n));
-//Console.ReadKey();
 
 #endregion
 
@@ -61,8 +59,6 @@ lista.Head.next.next.next.next = new ListNode(3);
 
 //Console.WriteLine("Lista ordenada:");
 //lista.Exibir();
-
-//Console.ReadKey();
 
 #endregion
 
