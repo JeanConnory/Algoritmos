@@ -453,6 +453,16 @@ var resultPostorder = BinaryTreePostOrderTraversal.PostOrderTraversal(rootPostor
 
 #endregion
 
+#region House Robber #198 (Dynamic Programming)
+
+int[] casas = { 2, 7, 9, 3, 1 }; // exemplo clássico
+
+int maximoRoubado = HouseRobber.Rob(casas);
+
+Console.WriteLine("Máximo que pode ser roubado: " + maximoRoubado);
+
+#endregion
+
 #endregion
 
 Console.ReadKey();
