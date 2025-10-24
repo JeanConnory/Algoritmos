@@ -418,6 +418,14 @@ bool isValidParentheses = ValidParentheses.IsValid(sValidParentheses);
 
 #endregion
 
+#region Best Time to Buy and Sell Stock #121 (Dynamic Programming)
+
+int[] prices = [7, 1, 5, 3, 6, 4];
+int resultPrices = BestTimeBuySellStock.MaxProfit(prices);
+//Console.WriteLine(resultPrices);
+
+#endregion
+
 #endregion
 
 Console.ReadKey();
