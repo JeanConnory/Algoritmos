@@ -459,7 +459,7 @@ int[] casas = { 2, 7, 9, 3, 1 }; // exemplo clássico
 
 int maximoRoubado = HouseRobber.Rob(casas);
 
-Console.WriteLine("Máximo que pode ser roubado: " + maximoRoubado);
+//Console.WriteLine("Máximo que pode ser roubado: " + maximoRoubado);
 
 #endregion
 
