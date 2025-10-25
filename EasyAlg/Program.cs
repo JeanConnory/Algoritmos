@@ -334,9 +334,8 @@ int firstBadVersion = FirstBadVersion.FirstBadVersionMethod(5);
 
 int[] numsMissingNumber = [9, 6, 4, 2, 3, 5, 7, 0, 1];
 
-int resultMissing = MissingNumber.MissingNumberMethod(numsMissingNumber);
+int resultMissing = MissingNumber.MissingNumberMethod2(numsMissingNumber);
 //Console.WriteLine(resultMissing);
-//Console.ReadKey();
 
 #endregion
 
