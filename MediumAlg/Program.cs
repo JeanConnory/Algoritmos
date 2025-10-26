@@ -500,6 +500,22 @@ int resultUniquepaths = UniquePaths.UniquePathsMethod(mUnique, nUnique);
 
 #endregion
 
+#region Longest Substring Palindrom #5
+
+string longestPalindrome = "babad";
+string resultLongestPalindrome = LongestPalindromeSubstring.LongestPalindrome(longestPalindrome);
+//Console.WriteLine(resultLongestPalindrome);
+
+#endregion
+
+#region Trapping Rain Water #42 (Hard)
+
+int[] heightsWater = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
+int resultTrapWater = TrappingRainWater.Trap(heightsWater);
+//Console.WriteLine(resultTrapWater);
+
+#endregion
+
 #endregion
 
 Console.ReadKey();
