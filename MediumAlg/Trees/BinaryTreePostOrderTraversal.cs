@@ -2,7 +2,7 @@
 
 public static class BinaryTreePostOrderTraversal
 {
-    public static IList<int> PostOrderTraversal(TreeNode root)
+    public static IList<int> PostOrderTraversal(TreeNode root) //Tem como resolver com recursão
     {
         List<int> ans = new List<int>();
         if (root == null)
