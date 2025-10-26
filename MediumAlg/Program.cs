@@ -1,6 +1,7 @@
 ﻿using EasyAlg;
 using MediumAlg;
 using MediumAlg.Trees;
+using System.Drawing;
 using System.Xml.Linq;
 
 #region Youtube - Jonathan Moura
@@ -136,6 +137,24 @@ Node curr = CopyListRandomPointer.CopyRandomList(n1);
 //    Console.WriteLine($"Valor: {curr.val}, Next: {(curr.next != null ? curr.next.val.ToString() : "null")}, Random: {randomVal}");
 //    curr = curr.next!;
 //}
+
+#endregion
+
+#region BinaryTree InOrderTraversal #94
+
+TreeNode rootInOrder = new TreeNode(1,
+    null,
+    new TreeNode(2,
+        new TreeNode(3),
+        null
+    )
+);
+
+BinaryTreeInOrderTraversal bTreeInOrder = new BinaryTreeInOrderTraversal();
+var resultBTreeInorder = bTreeInOrder.InOrderTraversal(rootInOrder);
+
+//Console.WriteLine("InOrder:");
+//Console.WriteLine("[" + string.Join(", ", resultBTreeInorder) + "]");
 
 #endregion
 
@@ -451,7 +470,7 @@ var resultPostorder = BinaryTreePostOrderTraversal.PostOrderTraversal(rootPostor
 
 //Console.WriteLine("[" + string.Join(", ", resultPostorder) + "]");
 
-#endregion
+#endregion 
 
 #region House Robber #198 (Dynamic Programming)
 
@@ -460,6 +479,24 @@ int[] casas = { 2, 7, 9, 3, 1 }; // exemplo clássico
 int maximoRoubado = HouseRobber.Rob(casas);
 
 //Console.WriteLine("Máximo que pode ser roubado: " + maximoRoubado);
+
+#endregion
+
+#region Coin Change #322
+
+int[] coins = [1, 2, 5];
+int amount = 11;
+
+int resultCoins = CoinChange.CoinChangeMethod(coins, amount);
+//Console.WriteLine(resultCoins);
+
+#endregion
+
+#region Unique Paths #62
+
+int mUnique = 3, nUnique = 3;
+int resultUniquepaths = UniquePaths.UniquePathsMethod(mUnique, nUnique);
+//Console.WriteLine(resultUniquepaths);
 
 #endregion
 
