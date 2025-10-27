@@ -245,6 +245,23 @@ ListNode nodeMiddleResult = MiddleLinkedList.MiddleNode(nodeMiddle1);
 
 #endregion
 
+#region RomanToInt #13
+
+string romanos = "MCMXCIV";
+int resultRomanos = RomanToInt.RomanToIntMethod(romanos);
+//Console.WriteLine(resultRomanos);
+
+#endregion
+
+#region Remove Element #27
+
+int[] numsRemoved = [3, 2, 2, 3];
+int valToRemove = 3;
+int resultRemoved = RemoveElement.RemoveElementMethod(numsRemoved, valToRemove);
+//Console.WriteLine(resultRemoved);
+
+#endregion
+
 #endregion
 
 #region Udemy
