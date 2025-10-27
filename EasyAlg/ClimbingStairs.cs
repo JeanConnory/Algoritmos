@@ -5,8 +5,8 @@ public static class ClimbingStairs
     public static int ClimbStairsMethod(int n) //Galego
     {
         List<int> list = new List<int>();
-        list.Add(1);
-        list.Add(1);
+        list.Add(1); // Degrau 0
+        list.Add(1); // Degrau 1
 
         for (int i = 2; i < n + 1; i++)
         {

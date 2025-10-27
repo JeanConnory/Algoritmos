@@ -158,6 +158,14 @@ var resultBTreeInorder = bTreeInOrder.InOrderTraversal(rootInOrder);
 
 #endregion
 
+#region Decode Ways #91
+
+string sDecode = "226";
+int resultDecode = DecodeWays.NumDecodings(sDecode);
+Console.WriteLine(resultDecode);
+
+#endregion
+
 #endregion
 
 #region Udemy
